@@ -9,7 +9,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.dhwh.demoavatarfourpda"
+    namespace = "io.thislinked.demoavatarfourpda"
     compileSdk = 34
 
     defaultConfig {
@@ -26,8 +26,7 @@ android {
             isMinifyEnabled = false
             isShrinkResources = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
