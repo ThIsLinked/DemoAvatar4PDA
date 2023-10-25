@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="divider_marginVertical">36dp</dimen>
+
+    <dimen name="example_108dp_image">108dp</dimen>
+    <dimen name="example_50dp_image">50dp</dimen>
+
+    <dimen name="scroll_margin">36dp</dimen>
+    <dimen name="scroll_tooltip_margin">18dp</dimen>
+</resources>

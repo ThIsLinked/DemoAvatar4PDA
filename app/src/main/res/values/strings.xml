@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_label">Demo size avatar 4PDA</string>
+    <string name="app_label_launcher">Demo</string>
+    <string name="app_versionName">1.9.42</string>
+
+    <string name="author">v%1$s (%2$d) by ThIsLinked // dhwh</string>
+
+    <string name="example_100px">100px</string>
+    <string name="example_108dp_note">Здесь 108dp…</string>
+    <string name="example_1280x1160px">1280x1160 (WxH)</string>
+    <string name="example_200px">200px</string>
+    <string name="example_50dp_note">В постах размер аватара установлен 50dp, здесь размер тоже 50dp…</string>
+    <string name="example_original_note">Оригинал…</string>
+    <string name="example_original_note2">На самом деле, Ёко чихает. Да… Я тоже сначала не понял, но после прочтения описания сразу вдуплил.</string>
+    <string name="example_original_source_note"><u>Неужто хочешь ссыль?</u></string>
+
+    <string name="scroll_tooltip">Scrolling!</string>
+    <string name="scroll_tooltip_toast">В этом активити можно scroll\'ить. Невероятно, да? :D</string>
+</resources>
