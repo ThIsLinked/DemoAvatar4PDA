@@ -1,4 +1,3 @@
-
 package io.dhwh.demoavatarfourpda
 
 import android.content.Intent
@@ -8,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.pm.PackageInfoCompat
+import io.thislinked.demoavatarfourpda.R
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,12 +21,15 @@ class MainActivity : AppCompatActivity() {
         val scrollTooltip: AppCompatTextView = findViewById(R.id.scroll_tooltip) // Set object ID
         // View
         scrollTooltip.setOnClickListener {
-            Toast.makeText(this, getString(R.string.scroll_tooltip_toast), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.scroll_tooltip_toast), Toast.LENGTH_SHORT)
+                .show()
         }
 
         /* Open link a source image when click */
-        val exampleOriginalSource: AppCompatTextView = findViewById(R.id.example_original_source) // Set object ID
-        val exampleOriginalSourceLink = "https://mr-dark-1amao.tumblr.com/post/689605799594639360/how-start-a-great-day-with-a-great" // Set link
+        val exampleOriginalSource: AppCompatTextView =
+            findViewById(R.id.example_original_source) // Set object ID
+        val exampleOriginalSourceLink =
+            "https://mr-dark-1amao.tumblr.com/post/689605799594639360/how-start-a-great-day-with-a-great" // Set link
         // Action
         exampleOriginalSource.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(exampleOriginalSourceLink)))
@@ -34,9 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         /* Set text about the author */
         val author: AppCompatTextView = findViewById(R.id.author) // Set object ID
-        val packageInfo = packageManager.getPackageInfo(this.packageName, 0) // Getting the package info
+        val packageInfo =
+            packageManager.getPackageInfo(this.packageName, 0) // Getting the package info
         val appVersionName = packageInfo.versionName // Getting the app versionName
-        val appVersionCode = PackageInfoCompat.getLongVersionCode(packageInfo).toInt() // Getting the app versionCode
+        val appVersionCode =
+            PackageInfoCompat.getLongVersionCode(packageInfo).toInt() // Getting the app versionCode
         val authorLink = "https://github.com/ThIsLinked/DemoAvatar4PDA" // Set link
         // View
         author.text = getString(R.string.author, appVersionName, appVersionCode)
