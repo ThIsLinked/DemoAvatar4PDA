@@ -13,7 +13,7 @@
     <string name="example_50dp_note">В постах размер аватара установлен 50dp, здесь размер тоже 50dp…</string>
     <string name="example_original_note">Оригинал…</string>
     <string name="example_original_note2">На самом деле, Ёко чихает. Да… Я тоже сначала не понял, но после прочтения описания сразу вдуплил.</string>
-    <string name="example_original_source_note"><u>Неужто хочешь ссыль?</u></string>
+    <string name="example_original_source_note">Неужто хочешь ссыль?</string>
 
     <string name="scroll_tooltip">Scrolling!</string>
     <string name="scroll_tooltip_toast">В этом активити можно scroll\'ить. Невероятно, да? :D</string>
