@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <io.dhwh.demoavatarfourpda.VerticalTextView
+    <io.thislinked.demoavatarfourpda.VerticalTextView
         android:id="@+id/scroll_tooltip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -264,14 +264,15 @@
                         app:shapeAppearanceOverlay="@style/roundOriginalImage"
                         app:srcCompat="@drawable/example_original" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/example_original_source"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="36dp"
                         android:text="@string/example_original_source_note"
                         android:textAlignment="center"
-                        android:textColor="@color/text_note_light"
+                        android:textColor="?colorAccent"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
