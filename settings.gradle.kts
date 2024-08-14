@@ -1,6 +1,5 @@
-
+//
 rootProject.name = "DemoAvatar4PDA"
-
 include(":app")
 
 pluginManagement {
@@ -11,6 +10,7 @@ pluginManagement {
     }
 }
 
+@Suppress("UnstableApiUsage")
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {

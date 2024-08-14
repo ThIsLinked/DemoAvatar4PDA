@@ -1,7 +1,7 @@
-
+//
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 kotlin {
@@ -10,11 +10,12 @@ kotlin {
 
 android {
     namespace = "io.thislinked.demoavatarfourpda"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
+        applicationId = "io.thislinked.demoavatarfourpda"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 10942
         versionName = "@string/app_versionName"
 
@@ -26,9 +27,14 @@ android {
             isMinifyEnabled = false
             isShrinkResources = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     compileOptions {
@@ -41,19 +47,20 @@ android {
     }
 
     packaging {
-        jniLibs.useLegacyPackaging = true
+        jniLibs.useLegacyPackaging = false
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
 
-    ndkVersion = "26.1.10909125"
-    buildToolsVersion = "34.0.0"
+    buildToolsVersion = "35.0.0"
+    ndkVersion = "27.0.12077973"
+
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
 
-    implementation("com.google.android.material:material:1.10.0")
+    implementation(libs.material)
 }

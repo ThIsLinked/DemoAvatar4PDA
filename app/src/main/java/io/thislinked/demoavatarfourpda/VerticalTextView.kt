@@ -10,12 +10,14 @@ import android.text.TextPaint
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
 
-
-class VerticalTextView(context: Context?, attrs: AttributeSet?): AppCompatTextView(context!!, attrs) {
+class VerticalTextView(context: Context?, attrs: AttributeSet?) :
+    AppCompatTextView(context!!, attrs) {
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+
         setMeasuredDimension(measuredHeight, measuredWidth)
+
     }
 
     override fun onDraw(canvas: Canvas) {
@@ -27,6 +29,7 @@ class VerticalTextView(context: Context?, attrs: AttributeSet?): AppCompatTextVi
         canvas.rotate(90f)
         layout.draw(canvas)
         canvas.restore()
+
     }
 
 }

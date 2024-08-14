@@ -8,6 +8,7 @@ signing.properties
 
 .gradle
 .idea
+.kotlin
 
 *.class
 *.dex
