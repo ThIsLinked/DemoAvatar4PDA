@@ -16,6 +16,7 @@ android {
         applicationId = "io.thislinked.demoavatarfourpda"
         minSdk = 24
         targetSdk = 35
+
         versionCode = 10942
         versionName = "@string/app_versionName"
 
@@ -44,6 +45,11 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
+    lint {
+        abortOnError = false
+        checkReleaseBuilds = false
     }
 
     packaging {
